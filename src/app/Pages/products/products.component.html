@@ -1,92 +1,22 @@
 <section id="products" class="container">
     <h1 class="text-center text-primary my-4">Latest Laptops</h1>
      <div class="container">
-      <div class="row">
-        <div class="col-md-4 cal-sm-12 cal-12 mb-3">
-          <div class="card">
-            <img src="../assets/images/Products/pimg1.jpeg" alt="">
-            <div class="card-body">
-              <h3 class="card-title">HP Laptops</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias nemo consectetur. 
-                Placeat, officia necessitatibus. Voluptas officiis est officia vero! Sint aperiam consectetur 
-                id beatae consequuntur consequatur laudantium numquam omnis.</p>
-                <button class="btn btn-danger me-2">Cost: 20000/-</button>
-                <button class="btn btn-info me-2">Wrty: 2Years</button>
-                <button class="btn btn-success">Cart</button>
+        <div class="row">
+         <ng-container *ngFor="let itam of product">
+          <div class="col-md-4 cal-sm-12 cal-12 mb-3">
+            <div class="card">
+              <img src="../assets/images/Products/{{itam.img}}" alt="">
+              <div class="card-body">
+                <h3 class="card-title">{{itam.name}}</h3>
+                <p>{{itam.contant}}</p>
+                  <button class="btn btn-danger me-1">Cost:{{itam.price}}/-</button>
+                  <button class="btn btn-info me-1">Wrty:{{itam.warnty}}Years</button>
+                  <button class="btn btn-success">Cart</button>
+              </div>
             </div>
-          </div>
-         </div>
-         <div class="col-md-4 cal-sm-12 cal-12 mb-3">
-          <div class="card">
-            <img src="../assets/images/Products/pimg2.jpeg" alt="">
-            <div class="card-body">
-              <h3 class="card-title">DELL Laptops</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias nemo consectetur. 
-                Placeat, officia necessitatibus. Voluptas officiis est officia vero! Sint aperiam consectetur 
-                id beatae consequuntur consequatur laudantium numquam omnis.</p>
-                <button class="btn btn-danger me-2">Cost: 30000/-</button>
-                <button class="btn btn-info me-2">Wrty: 1Years</button>
-                <button class="btn btn-success">Cart</button>
-            </div>
-          </div>
-         </div>
-         <div class="col-md-4 cal-sm-12 cal-12 mb-3">
-          <div class="card">
-            <img src="../assets/images/Products/pimg3.jpeg" alt="">
-            <div class="card-body">
-              <h3 class="card-title">LENOVO Laptops</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias nemo consectetur. 
-                Placeat, officia necessitatibus. Voluptas officiis est officia vero! Sint aperiam consectetur 
-                id beatae consequuntur consequatur laudantium numquam omnis.</p>
-                <button class="btn btn-danger me-2">Cost: 40000/-</button>
-                <button class="btn btn-info me-2">Wrty: 3Years</button>
-                <button class="btn btn-success">Cart</button>
-            </div>
-          </div>
-         </div>
-         <div class="col-md-4 cal-sm-12 cal-12 mb-3">
-          <div class="card">
-            <img src="../assets/images/Products/pimg4.jpeg" alt="">
-            <div class="card-body">
-              <h3 class="card-title">VIVO Laptops</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias nemo consectetur. 
-                Placeat, officia necessitatibus. Voluptas officiis est officia vero! Sint aperiam consectetur 
-                id beatae consequuntur consequatur laudantium numquam omnis.</p>
-                <button class="btn btn-danger me-2">Cost: 60000/-</button>
-                <button class="btn btn-info me-2">Wrty: 2Years</button>
-                <button class="btn btn-success">Cart</button>
-            </div>
-          </div>
-         </div>
-         <div class="col-md-4 cal-sm-12 cal-12 mb-3">
-          <div class="card">
-            <img src="../assets/images/Products/pimg5.jpeg" alt="">
-            <div class="card-body">
-              <h3 class="card-title">ASUS Laptops</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias nemo consectetur. 
-                Placeat, officia necessitatibus. Voluptas officiis est officia vero! Sint aperiam consectetur 
-                id beatae consequuntur consequatur laudantium numquam omnis.</p>
-                <button class="btn btn-danger me-2">Cost: 25000/-</button>
-                <button class="btn btn-info me-2">Wrty: 1Years</button>
-                <button class="btn btn-success">Cart</button>
-            </div>
-          </div>
-         </div>
-         <div class="col-md-4 cal-sm-12 cal-12 mb-3">
-          <div class="card">
-            <img src="../assets/images/Products/pimg6.jpeg" alt="">
-            <div class="card-body">
-              <h3 class="card-title">MI Laptops</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias nemo consectetur. 
-                Placeat, officia necessitatibus. Voluptas officiis est officia vero! Sint aperiam consectetur 
-                id beatae consequuntur consequatur laudantium numquam omnis.</p>
-                <button class="btn btn-danger me-2">Cost: 30000/-</button>
-                <button class="btn btn-info me-2">Wrty: 2Years</button>
-                <button class="btn btn-success">Cart</button>
-            </div>
-          </div>
-         </div>
-      </div>
+           </div>
+         </ng-container>
+       </div>
      </div>
   </section>
   
