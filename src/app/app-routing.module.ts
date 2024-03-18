@@ -9,6 +9,7 @@ import { RegisterComponent } from './Pages/register/register.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { BlogComponent } from './Pages/blog/blog.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
+import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path:"Blog",
     component:BlogComponent
+  },
+  {
+    path:"Dashboard",
+    component:DashboardComponent
   },
   {
     path:"**",
