@@ -12,6 +12,7 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { AdminComponent } from './Pages/admin/admin.component';
 import { BlogComponent } from './Pages/blog/blog.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
+import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.com
     ContactComponent,
     AdminComponent,
     BlogComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
