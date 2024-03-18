@@ -14,28 +14,16 @@ export class DashboardComponent {
     
   public nav:navbar[]=[
     {
-      name:"Home",
-      url:"/Home"
+      name:"Admin",
+      url:"/Admin"
     },
     {
-      name:"About",
-      url:"/About"
+      name:"User",
+      url:"/User"
     },
     {
-      name:"Products",
-      url:"/Products"
-    },
-    {
-      name:"Contant",
-      url:"/Contact"
-    },
-    {
-      name:"Register",
-      url:"/Register"
-    },
-    {
-      name:"Login",
-      url:"/Login"
+      name:"Logout",
+      url:"/Logout"
     }
   ]
 }

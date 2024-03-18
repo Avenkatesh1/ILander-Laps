@@ -30,6 +30,10 @@ export class AppComponent {
       url:"/Contact"
     },
     {
+      name:"Dashboard",
+      url:"/Dashboard"
+    },
+    {
       name:"Register",
       url:"/Register"
     },
